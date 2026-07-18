@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome TO Grade 7 Alive People</title>
+    <style>
+        /* Simple, clean styling for your website */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #0078d4;
+        }
+        /* Estilo para sa listahan ng mga opisyal */
+        .officer-info {
+            margin-top: 20px;
+            font-size: 15px;
+            color: #444;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            text-align: center;
+            line-height: 1.6;
+        }
+        /* Binagong kulay para sa TikTok button (mula asul, ginawang mapusyaw na itim/red-pink accent para sa TikTok vibe) */
+        button {
+            background-color: #010101;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 25px;
+            transition: background 0.2s;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #fe2c55; /* TikTok Red/Pink color sa hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome TO Grade 7 Alive People</h1>
+        <p>Welcome to the official portal for Grade 7 Alive People.</p>
+        
+        <div class="officer-info">
+            <strong>President:</strong> Ahleyah Montefalcon <br>
+            <strong>Vice President:</strong> Shena Lee Mangubat
+        </div>
+        
+        <!-- Binagong Teksto ng Button -->
+        <button onclick="redirectToTikTok()">Log In TikTok Account</button>
+    </div>
+
+    <script>
+        // Function para i-redirect ang user sa TikTok kapag kinlik ang button
+        function redirectToTikTok() {
+            window.open("https://www.tiktok.com/", "_blank");
+        }
+    </script>
+
+</body>
+</html>
