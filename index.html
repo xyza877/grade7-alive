@@ -5,74 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome TO Grade 7 Alive People</title>
     <style>
-        /* Simple, clean styling for your website */
+        /* Skyblue and Black Theme */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f6;
-            color: #333;
+            background-color: #000000; /* Pure Black Background */
+            color: #ffffff;
             text-align: center;
             padding: 50px;
         }
         .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #111111; /* Dark Black/Gray Container */
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 191, 255, 0.3); /* Skyblue Glow Effect */
             max-width: 500px;
             margin: 0 auto;
+            border: 2px solid #00bfff; /* Skyblue Border */
         }
         h1 {
-            color: #0078d4;
+            color: #00bfff; /* Skyblue Title */
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
         }
-        /* Estilo para sa listahan ng mga opisyal */
+        p {
+            color: #cccccc;
+            font-size: 14px;
+        }
+        /* Listahan ng mga Opisyal */
         .officer-info {
-            margin-top: 20px;
-            font-size: 15px;
-            color: #444;
-            border-top: 1px solid #eee;
-            padding-top: 15px;
-            text-align: center;
-            line-height: 1.6;
-        }
-        /* Binagong kulay para sa TikTok button (mula asul, ginawang mapusyaw na itim/red-pink accent para sa TikTok vibe) */
-        button {
-            background-color: #010101;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
             margin-top: 25px;
-            transition: background 0.2s;
-            font-weight: bold;
+            font-size: 16px;
+            color: #ffffff;
+            border-top: 1px dashed #00bfff;
+            padding-top: 20px;
+            text-align: center;
+            line-height: 1.8;
         }
-        button:hover {
-            background-color: #fe2c55; /* TikTok Red/Pink color sa hover */
+        .officer-info strong {
+            color: #00bfff; /* Skyblue labels */
+        }
+        
+        /* Skyblue & Black Glow Style Button */
+        .tiktok-btn {
+            background: linear-gradient(135deg, #000000 0%, #111111 100%);
+            color: #00bfff; /* Skyblue Text */
+            border: 2px solid #00bfff;
+            padding: 14px 30px;
+            font-size: 16px;
+            border-radius: 30px; /* Rounded pill style */
+            cursor: pointer;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        /* Hover Effect */
+        .tiktok-btn:hover {
+            background: #00bfff; 
+            color: #000000; /* Nagiging Black ang text */
+            box-shadow: 0 0 25px #00bfff; /* Solid Skyblue Glow */
+            transform: translateY(-3px);
+        }
+        .tiktok-btn:active {
+            transform: translateY(-1px);
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Welcome TO Grade 7 Alive People</h1>
-        <p>Welcome to the official portal for Grade 7 Alive People.</p>
+        <h1>Grade 7 Alive People</h1>
+        <p>The Official Portal for Grade 7 Alive Community</p>
         
         <div class="officer-info">
             <strong>President:</strong> Ahleyah Montefalcon <br>
             <strong>Vice President:</strong> Shena Lee Mangubat
         </div>
         
-        <!-- Binagong Teksto ng Button -->
-        <button onclick="redirectToTikTok()">Log In TikTok Account</button>
+        <!-- Button na magre-redirect sa inyong TikTok Video -->
+        <button class="tiktok-btn" onclick="redirectToTikTokVideo()">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-top: -2px;">
+                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-2a4.3 4.3 0 0 1-.19-.5v7.5A4.5 4.5 0 1 1 6.337 7.5c.347 0 .671.079.963.22V5.3a6.5 6.5 0 0 0-.963-.07A6.5 6.5 0 1 0 13 11.5V6h-2V4a2 2 0 0 1-2-2z"/>
+            </svg>
+            Watch TikTok Video
+        </button>
     </div>
 
     <script>
-        // Function para i-redirect ang user sa TikTok kapag kinlik ang button
-        function redirectToTikTok() {
-            window.open("https://www.tiktok.com/", "_blank");
+        // Dito na nakalagay ang mismong link ng TikTok video niyo
+        function redirectToTikTokVideo() {
+            window.open("https://www.tiktok.com/@g_7alive/video/7661979324924398868?is_from_webapp=1&sender_device=pc", "_blank");
         }
     </script>
-
 </body>
 </html>
